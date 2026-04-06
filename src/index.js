@@ -2,30 +2,30 @@
 
 const number = String(prompt("Введите число от 0 до 7 включительно(можете вводить в двоичном формате): ")).trim();
 
-if (number.length > 3) {
+if (number.length >= 3) {
   switch (parseInt(number, 2)) {
-    case 0o0:
+    case 0:
       console.log("---");
       break;
-    case 0o1:
+    case 1:
       console.log("--x");
       break;
-    case 0o10:
+    case 2:
       console.log("-w-");
       break;
-    case 0o11:
+    case 3:
       console.log("-wx");
       break;
-    case 0o100:
+    case 4:
       console.log("r--");
       break;
-    case 0o101:
+    case 5:
       console.log("r-x");
       break;
-    case 0o110:
+    case 6:
       console.log("rw-");
       break;
-    case 0o111:
+    case 7:
       console.log("rwx");
       break;
     default:
